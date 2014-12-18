@@ -1,0 +1,51 @@
+
+<div class="col-sm-3">
+    <h5 class="refineSearch">Refine Your Search</h5>
+    <div class="filterSectionDiv">
+        <div class="filterSectionHeader">
+            <span>SIZE</span>
+            <span class="pull-right collapseExpandIcon"> <i class="glyphicon glyphicon-plus"></i> </span>
+        </div>
+        <div class="filterSectionBody">
+            <ul class="list-unstyled list-inline">
+                <li ng-repeat="size in sizes">
+                    <input type="checkbox" ng-click="filterBySize(size)"/> {{size}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filterSectionDiv">
+        <div class="filterSectionHeader">
+            <span>PACK / MULTI PACK</span>
+            <span class="pull-right collapseExpandIcon"> <i class="glyphicon glyphicon-plus"></i> </span>
+        </div>
+        <div class="filterSectionBody">
+
+        </div>
+    </div>
+
+    <div class="filterSectionDiv">
+        <div class="filterSectionHeader">
+            <span>PRICE</span>
+            <span class="pull-right collapseExpandIcon"> <i class="glyphicon glyphicon-plus"></i> </span>
+        </div>
+        <div class="filterSectionBody">
+
+        </div>
+    </div>
+
+    <div class="filterSectionDiv">
+        <div class="filterSectionHeader">
+            <span>COLLECTION</span>
+            <span class="pull-right collapseExpandIcon"> <i class="glyphicon glyphicon-plus"></i> </span>
+        </div>
+        <div class="filterSectionBody">
+
+        </div>
+    </div>
+
+</div>
+<div class="col-sm-9" product-display products-data='productsData' >
+
+</div>
