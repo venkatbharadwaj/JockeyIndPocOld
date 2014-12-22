@@ -23,6 +23,7 @@ angular.module('jockeyIndPocApp')
                 .callApi(config)
                 .then(function (data) {
                     $log.log("Success Callback");
+                console.log("commit");
                     $scope.productsData = data;
 
                     angular.forEach($scope.productsData.response.docs, function (val, key) {
